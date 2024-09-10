@@ -1,0 +1,22 @@
+Security Hub - A finding is a security issue or failed security check.
+
+- Hardware MFA should be enabled for the root user
+- MFA should be enabled for the root user
+- Security groups should not allow unrestricted access to ports with high risk - WebAppSG
+- Security groups should not allow unrestricted access to ports with high risk - AttackInstanceSG
+
+Recommendations
+- Enable MFA for root account
+- Update security group to allow only ports that needed
+
+AWS config - 46 Noncompliant rule(s) & 31 Noncompliant resource(s) - I onbly listed a few rules in here
+- Checks whether the active access keys are rotated within the number of days specified in maxAccessKeyAge
+- Checks whether HTTP to HTTPS redirection is configured on all HTTP listeners of Application Load Balancers. The rule is NON_COMPLIANT if one or more HTTP listeners of Application Load Balancers do not have HTTP to HTTPS redirection configured.
+- Checks whether Amazon Elastic Compute Cloud (Amazon EC2) instances have a public IP association. The rule is NON_COMPLIANT if the publicIp field is present in the Amazon EC2 instance configuration item. This rule applies only to IPv4.
+- Checks if an Amazon CloudFront distribution with an Amazon Simple Storage Service (Amazon S3) Origin type has origin access control (OAC) enabled. The rule is NON_COMPLIANT for CloudFront distributions with Amazon S3 origins that don't have OAC enabled.
+
+Recommendations:
+- Config number of days the active access keys are rotated for maxAccessKeyAge
+- Reconfig Application Load Balancers HTTP & HTTPS listeners
+- Reconfig EC2 instance to remove public IP config
+- Disbale OAC Amazon CloudFront

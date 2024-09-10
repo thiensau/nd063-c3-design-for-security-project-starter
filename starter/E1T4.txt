@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+subnet moms-kithen-web-service Private Subnet with CIDR is 10.192.20.0/24 is a private subnet but it has rule 100 that allows all traffic from all ports on all ports
+
+# Poor practice 2
+c3-app-InstanceRole-KtmkYHZFA1hQ role has permisson to access all S3 buckets. it is not follow the the principle of least privilege rule

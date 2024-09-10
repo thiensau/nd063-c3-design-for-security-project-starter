@@ -1,0 +1,13 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+i-071ed943e65a494f1 is performing SSH brute force attacks against 10.192.10.135. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.
+10.192.11.252 is performing SSH brute force attacks against i-0a37529c690c89793. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+Refer to https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html
+Here are some of the key ways in which Amazon GuardDuty can help you monitor, detect, and manage potential threats in your AWS environment.
+
+Continuously monitors specific data sources and event logs
+Foundational threat detection 
+– When you enable GuardDuty in an AWS account, GuardDuty automatically starts ingesting the foundational data sources associated with that account. 
+These data sources include AWS CloudTrail management events, VPC flow logs (from Amazon EC2 instances), and DNS logs. 
+You don't need to enable anything else for GuardDuty to start analyzing and processing these data sources to generate associated security findings.

@@ -1,0 +1,24 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- Terrascan: Terrascan is a static code analyzer for Infrastructure as Code. -> https://github.com/tenable/terrascan
+- cfn-lint: Validate AWS CloudFormation yaml/json templates -> https://github.com/aws-cloudformation/cfn-lint
+
+### Example vulnerability
+- Hard-Coded Secrets: Hard-coding sensitive information
+- Exposed Security Groups: Allowing all inbound traffic (0.0.0.0/0) makes your resources exposed to the entire internet
+
+##Scan AMI’s or containers for OS vulnerabilities
+- Using Amazon Inspector: Amazon Inspector automatically discovers workloads, such as Amazon EC2 instances, containers, and Lambda functions, and scans them for software vulnerabilities and unintended network exposure.
+
+### Example vulnerability
+Hard-Coded Secrets: Attackers who gain access to the image or code repository can retrieve these secrets and exploit them.
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config: AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. 
+This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
+Amazon GuardDuty: Amazon GuardDuty is a continuous security monitoring service. Amazon GuardDuty can help to identify unexpected and potentially unauthorized or malicious activity in your AWS environment.
+
+### Example vulnerability
+Unrestricted S3 Bucket Access: An S3 bucket with public read or write permissions can expose sensitive data to the public, leading to potential data breaches or unauthorized access
+Potential Data Exfiltration

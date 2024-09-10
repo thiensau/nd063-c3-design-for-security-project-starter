@@ -9,7 +9,7 @@ Recommendations
 - Enable MFA for root account
 - Update security group to allow only ports that needed
 
-AWS config - 46 Noncompliant rule(s) & 31 Noncompliant resource(s) - I onbly listed a few rules in here
+AWS config - A lot of Noncompliant rule(s) & Noncompliant resource(s) - I only listed a few rules in here
 - Checks whether the active access keys are rotated within the number of days specified in maxAccessKeyAge
 - Checks whether HTTP to HTTPS redirection is configured on all HTTP listeners of Application Load Balancers. The rule is NON_COMPLIANT if one or more HTTP listeners of Application Load Balancers do not have HTTP to HTTPS redirection configured.
 - Checks whether Amazon Elastic Compute Cloud (Amazon EC2) instances have a public IP association. The rule is NON_COMPLIANT if the publicIp field is present in the Amazon EC2 instance configuration item. This rule applies only to IPv4.
